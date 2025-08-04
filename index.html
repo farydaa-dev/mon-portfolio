@@ -124,15 +124,23 @@
       document.body.classList.toggle("dark-mode");
     });
 
-    // Language switcher
+    // Language switcher intelligent
     const langBtn = document.getElementById("switch-lang");
     langBtn.addEventListener("click", () => {
       const frElems = document.querySelectorAll(".lang-fr");
       const enElems = document.querySelectorAll(".lang-en");
       const isFrench = frElems[0].style.display !== "none";
 
-      frElems.forEach(el => el.style.display = isFrench ? "none" : "inline");
-      enElems.forEach(el => el.style.display = isFrench ? "inline" : "none");
+      frElems.forEach(el => el.style.display = "none");
+
+      enElems.forEach(el => {
+        const tag = el.tagName.toLowerCase();
+        if (["span", "a", "li", "button", "label"].includes(tag)) {
+          el.style.display = "inline-block";
+        } else {
+          el.style.display = "block";
+        }
+      });
 
       langBtn.querySelector(".lang-text").textContent = isFrench ? "FR" : "EN";
     });
