@@ -88,14 +88,21 @@
 </section>
 
     <section id="contact">
-      <h2>Contactez-moi</h2>
-      <ul>
-        <li>Email : <a href="mailto:fary.dev@gmail.com">fary.dev@gmail.com</a></li>
-        <li>Téléphone : +221 77 123 45 67</li>
-        <li>LinkedIn : <a href="https://www.linkedin.com/in/farydev" target="_blank">linkedin.com/in/farydev</a></li>
-        <li>GitHub : <a href="https://github.com/farydaa-dev" target="_blank">@farydaa-dev</a></li>
-      </ul>
-    </section>
+  <h2>Contactez-moi</h2>
+  <form action="https://formspree.io/f/meozlyna" method="POST" class="contact-form">
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+	
   </main>
 
   <footer>
