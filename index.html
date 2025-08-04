@@ -1,121 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fary | Développeur Full Stack</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fary | Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
   <header>
-    <h1>Bienvenue sur mon Portfolio</h1>
+    <div class="header-buttons">
+      <button id="switch-lang" class="lang-btn" title="Changer de langue">
+        🌐 <span class="lang-text">EN</span>
+      </button>
+    </div>
+    <h1 class="lang-fr">Bienvenue sur mon Portfolio</h1>
+    <h1 class="lang-en" style="display:none;">Welcome to my Portfolio</h1>
     <nav>
       <ul>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" class="lang-fr">À propos</a><a href="#about" class="lang-en" style="display:none;">About</a></li>
+        <li><a href="#skills" class="lang-fr">Compétences</a><a href="#skills" class="lang-en" style="display:none;">Skills</a></li>
+        <li><a href="#projects" class="lang-fr">Projets</a><a href="#projects" class="lang-en" style="display:none;">Projects</a></li>
+        <li><a href="#contact" class="lang-fr">Contact</a><a href="#contact" class="lang-en" style="display:none;">Contact</a></li>
         <li><a href="blog/blog.html">Blog</a></li>
       </ul>
     </nav>
-<button id="switch-lang">EN</button>
-<button id="toggle-mode" class="dark-toggle" title="Activer le mode sombre">
-  🌙
-</button>
-</header>
+    <button id="toggle-mode" class="dark-toggle" title="Activer le mode sombre">
+      🌙
+    </button>
+  </header>
+
   <main>
     <section id="about">
-      <h2>À propos de moi</h2>
-      <img src="images/fary.jpg" alt="Photo de Fary" class="profile-photo">
-      <p>Bonjour, je m'appelle <strong>Fary</strong>, développeur full-stack passionné par le développement d'applications web modernes et performantes.</p>
-      <p>J'aime résoudre des problèmes, concevoir des interfaces claires, et apprendre constamment de nouvelles technologies.</p>
-<p class="temporaire">Ceci est un paragraphe temporaire ajouté pour tester git stash.</p>    
-</section>
+      <h2 class="lang-fr">À propos de moi</h2>
+      <h2 class="lang-en" style="display:none;">About Me</h2>
+      <img src="images/fary.jpg" alt="Photo de Fary" class="profile-photo" />
+      <p class="lang-fr">Bonjour, je m'appelle <strong>Fary</strong>, développeur full-stack passionné par le développement d'applications web modernes et performantes.</p>
+      <p class="lang-en" style="display:none;">Hello, my name is <strong>Fary</strong>, a full-stack developer passionate about building modern and high-performance web applications.</p>
+    </section>
 
     <section id="skills">
-      <h2>Mes Compétences</h2>
+      <h2 class="lang-fr">Mes Compétences</h2>
+      <h2 class="lang-en" style="display:none;">My Skills</h2>
       <ul>
-        <li>Frontend : HTML5, CSS3, JavaScript, React</li>
-        <li>Backend : Node.js, Express, Java, Spring Boot</li>
-        <li>Base de données : MySQL, MongoDB, PostgreSQL</li>
-        <li>Autres : Git, GitHub, Docker, Linux, Figma</li>
+        <li class="lang-fr">Frontend : HTML5, CSS3, JavaScript, React</li>
+        <li class="lang-en" style="display:none;">Frontend: HTML5, CSS3, JavaScript, React</li>
+        <li class="lang-fr">Backend : Node.js, Express, Java, Spring Boot</li>
+        <li class="lang-en" style="display:none;">Backend: Node.js, Express, Java, Spring Boot</li>
+        <li class="lang-fr">Base de données : MySQL, MongoDB, PostgreSQL</li>
+        <li class="lang-en" style="display:none;">Database: MySQL, MongoDB, PostgreSQL</li>
+        <li class="lang-fr">Autres : Git, GitHub, Docker, Linux, Figma</li>
+        <li class="lang-en" style="display:none;">Others: Git, GitHub, Docker, Linux, Figma</li>
       </ul>
     </section>
 
     <section id="projects">
-      <h2>Mes Projets</h2>
+      <h2 class="lang-fr">Mes Projets</h2>
+      <h2 class="lang-en" style="display:none;">My Projects</h2>
       <div class="projects-grid">
         <article class="project-card">
-          <h3>Portfolio Personnel</h3>
-          <p>Site web responsive présentant mon parcours, mes projets et mes contacts professionnels.</p>
+          <h3 class="lang-fr">Portfolio Personnel</h3>
+          <h3 class="lang-en" style="display:none;">Personal Portfolio</h3>
+          <p class="lang-fr">Site web responsive présentant mon parcours, mes projets et mes contacts professionnels.</p>
+          <p class="lang-en" style="display:none;">Responsive website showcasing my background, projects, and professional contacts.</p>
           <p><strong>Tech :</strong> HTML, CSS, JavaScript</p>
         </article>
 
         <article class="project-card">
-          <h3>Site E-commerce</h3>
-          <p>Plateforme de vente avec gestion des produits, panier, authentification et paiement sécurisé.</p>
+          <h3 class="lang-fr">Site E-commerce</h3>
+          <h3 class="lang-en" style="display:none;">E-commerce Website</h3>
+          <p class="lang-fr">Plateforme de vente avec gestion des produits, panier, authentification et paiement sécurisé.</p>
+          <p class="lang-en" style="display:none;">Sales platform with product management, cart, authentication, and secure payment.</p>
           <p><strong>Tech :</strong> React, Node.js, MongoDB</p>
         </article>
 
         <article class="project-card">
-          <h3>App Mobile Fitness</h3>
-          <p>Application de suivi d'entraînement avec analyses, objectifs et interface intuitive.</p>
+          <h3 class="lang-fr">App Mobile Fitness</h3>
+          <h3 class="lang-en" style="display:none;">Fitness Mobile App</h3>
+          <p class="lang-fr">Application de suivi d'entraînement avec analyses, objectifs et interface intuitive.</p>
+          <p class="lang-en" style="display:none;">Workout tracking app with analytics, goals, and user-friendly interface.</p>
           <p><strong>Tech :</strong> React Native, Firebase</p>
         </article>
 
         <article class="project-card">
-          <h3>Dashboard Analytics</h3>
-          <p>Visualisation de données interactives pour le suivi de KPI métiers.</p>
+          <h3 class="lang-fr">Dashboard Analytics</h3>
+          <h3 class="lang-en" style="display:none;">Analytics Dashboard</h3>
+          <p class="lang-fr">Visualisation de données interactives pour le suivi de KPI métiers.</p>
+          <p class="lang-en" style="display:none;">Interactive data visualizations for monitoring business KPIs.</p>
           <p><strong>Tech :</strong> Python, D3.js, PostgreSQL</p>
         </article>
       </div>
     </section>
-<section id="galerie">
-  <h2>Galerie de projets</h2>
-  <div class="galerie-grid">
-    <a href="images/ig2.jpg" target="_blank">
-      <img src="images/ig2.jpg" alt="Projet 1">
-    </a>
-    <a href="images/ig3.jpg" target="_blank">
-      <img src="images/ig3.jpg" alt="Projet 2">
-    </a>
-    <a href="images/ig4.jpb" target="_blank">
-      <img src="images/ig4.jpg" alt="Projet 3">
-    </a>
-    <a href="images/ig7.jpg" target="_blank">
-      <img src="images/ig7.jpg" alt="Projet 4">
-    </a>
-  </div>
-</section>
 
     <section id="contact">
-  <h2>Contactez-moi</h2>
-  <form action="https://formspree.io/f/meozlyna" method="POST" class="contact-form">
-    <label for="name">Nom</label>
-    <input type="text" id="name" name="name" required>
+      <h2 class="lang-fr">Contactez-moi</h2>
+      <h2 class="lang-en" style="display:none;">Contact Me</h2>
+      <form action="https://formspree.io/f/meozlyna" method="POST" class="contact-form">
+        <label for="name" class="lang-fr">Nom</label>
+        <label for="name" class="lang-en" style="display:none;">Name</label>
+        <input type="text" id="name" name="name" required />
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message" class="lang-fr">Message</label>
+        <label for="message" class="lang-en" style="display:none;">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
-	
+        <button type="submit" class="lang-fr">Envoyer</button>
+        <button type="submit" class="lang-en" style="display:none;">Send</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Fary. Tous droits réservés.</p>
+    <p class="lang-fr">&copy; 2025 Fary. Tous droits réservés.</p>
+    <p class="lang-en" style="display:none;">&copy; 2025 Fary. All rights reserved.</p>
   </footer>
-<script>
-  document.getElementById('toggle-mode').addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
 
+  <script>
+    // Toggle dark mode
+    document.getElementById("toggle-mode").addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+
+    // Language switcher
+    const langBtn = document.getElementById("switch-lang");
+    langBtn.addEventListener("click", () => {
+      const frElems = document.querySelectorAll(".lang-fr");
+      const enElems = document.querySelectorAll(".lang-en");
+      const isFrench = frElems[0].style.display !== "none";
+
+      frElems.forEach(el => el.style.display = isFrench ? "none" : "inline");
+      enElems.forEach(el => el.style.display = isFrench ? "inline" : "none");
+
+      langBtn.querySelector(".lang-text").textContent = isFrench ? "FR" : "EN";
+    });
+  </script>
 </body>
 </html>
-
