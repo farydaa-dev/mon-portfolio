@@ -177,3 +177,26 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
+
+/* Bouton toggle mode sombre */
+.dark-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.dark-toggle:hover {
+  transform: scale(1.2);
+  color: #1abc9c;
+}
+
+body:not(.dark-mode) .dark-toggle {
+  color: #2c3e50;
+}
